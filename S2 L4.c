@@ -62,10 +62,10 @@ int domanda3(int punteggio)
 int main()
 {
     int n;
-    int scelta;
+    int scelta=1;
     int punteggio = 0;
     printf("Gioco a Quiz\n");
-    for(scelta=1;scelta==1;scelta)
+    while(scelta==1)
     {
         printf("1.Nuova partita\n");
         printf("0.Esci\n");
@@ -97,6 +97,7 @@ int main()
         printf("1.Si\n");
         printf("2.No\n");
         scanf("%d", &scelta);
+        punteggio = 0;
     }
     return 0;
 }
